@@ -83,10 +83,14 @@ class Library {
     func reportAllBooks() {
         //start with books that are in a shelf
         for eachShelf in shelves {
-            
+            for eachBook in eachShelf {
+                println(eachBook.title)
+            }
         }
         //include books not in shelf:
+        for eachBook in unshelvedBooks {
+            println(eachBook.title)
+        }
     }
-    //include a non-shelf
     
 }
